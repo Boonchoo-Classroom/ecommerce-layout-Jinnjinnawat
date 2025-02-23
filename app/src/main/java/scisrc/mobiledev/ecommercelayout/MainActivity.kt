@@ -1,18 +1,20 @@
 package scisrc.mobiledev.ecommercelayout
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import scisrc.mobiledev.ecommercelayout.databinding.ActivityMainBinding
+
 import scisrc.mobiledev.ecommercelayout.ui.HomeFragment
 import scisrc.mobiledev.ecommercelayout.ui.ProfileFragment
 import  scisrc.mobiledev.ecommercelayout.ui.CartFragment
 import  scisrc.mobiledev.ecommercelayout.ui.ProductFragment
 import  scisrc.mobiledev.ecommercelayout.ui.FavoritesFragment
-
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -23,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         // Setup toolbar
         setSupportActionBar(binding.toolbar)
@@ -87,4 +90,5 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
+
 }

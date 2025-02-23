@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="324dp"
+        android:layout_height="151dp"
+        android:src="@drawable/ll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="112dp"
+        android:layout_height="33dp"
+        android:text="฿10.00"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="54dp"
+        android:layout_height="26dp"
+        android:text="ยางลบ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="145dp"
+        android:layout_height="67dp"
+        android:text="ซื้อสินค้า"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="145dp"
+        android:layout_height="67dp"
+        android:text="เพิ่มลงรถเข็น"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:src="@drawable/isto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.972" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="รายละเอียดสินค้า"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="305dp"
+        android:layout_height="262dp"
+        android:text="กาลครั้งหนึ่งในห้องเรียนเล็กๆ ที่เต็มไปด้วยหนังสือ สมุด และเครื่องเขียนมากมาย มียางลบก้อนหนึ่งนั่งอยู่เงียบๆ ในกล่องดินสอ มันเป็นยางลบสีขาวสะอาด รูปร่างเป็นสี่เหลี่ยมผืนผ้า ได้รับการใช้งานบ้างเป็นครั้งคราว แต่ก็ยังคงภาคภูมิใจในหน้าที่ของมัน  วันหนึ่ง ดินสอไม้พูดขึ้นมาว่า &quot;ฉันเป็นเครื่องมือที่สำคัญมากเลยนะ! ฉันใช้เขียนตัวหนังสือ วาดภาพ และจดบันทึกสิ่งต่างๆ ผู้คนต่างต้องการฉันเสมอ&quot;  ยางลบยิ้มและตอบกลับอย่างนุ่มนวล &quot;ใช่แล้วล่ะ ดินสอ เธอเป็นสิ่งที่สำคัญมาก แต่ฉันเองก็มีหน้าที่ของฉันเหมือนกัน ฉันช่วยลบรอยผิดพลาดและทำให้กระดาษสะอาดขึ้น&quot;  วันหนึ่ง เด็กชายเจ้าของกล่องดินสอรีบเร่งทำการบ้าน แต่เขาเผลอเขียนผิดหลายจุด ทำให้หน้ากระดาษเต็มไปด้วยรอยขีดฆ่า เขาจึงหยิบยางลบขึ้นมาอย่างไม่ลังเล แล้วยางลบก็ทำงานของมัน ลบรอยผิดพลาดออกไป ทำให้เด็กชายสามารถเขียนใหม่ได้อย่างถูกต้อง  แต่ยิ่งใช้มากเท่าไหร่ ยางลบก็เริ่มเล็กลงๆ ทุกครั้งที่มันลบ มันก็ค่อยๆ ถูกใช้ไปทีละนิดๆ จนเริ่มเหลือเพียงชิ้นเล็กๆ ดินสอเห็นดังนั้นจึงถามว่า &quot;เธอไม่เสียใจเหรอ ที่ตัวเองค่อยๆ หายไปทุกครั้งที่ช่วยลบความผิดพลาด?&quot;  ยางลบยิ้มอย่างอบอุ่นและตอบว่า &quot;ไม่เลย ฉันมีความสุขที่ได้ช่วยให้กระดาษสะอาดขึ้น และทำให้เจ้าของของเราสามารถเขียนสิ่งที่ถูกต้องลงไปได้ ฉันอาจจะเล็กลง แต่สิ่งที่ฉันทำมีความหมายมาก&quot;  ดินสอได้ยินเช่นนั้นก็เข้าใจในคุณค่าของเพื่อนตัวน้อยของมัน และตั้งแต่นั้นเป็นต้นมา ทุกครั้งที่เด็กชายใช้ดินสอ เขาก็จะดูแลยางลบของเขาให้ดีที่สุด เพราะเขารู้แล้วว่า ถึงแม้ยางลบจะค่อยๆ หายไป แต่มันได้ทำหน้าที่ของมันอย่างสมบูรณ์แล้ว"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,248 +7,342 @@
     android:backgroundTint="#4CAF50"
     tools:context=".ui.HomeFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/fragment_home_xml_constraintlayout_scene">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="130dp"
-            android:layout_height="22dp"
+            android:id="@+id/CardView"
+            android:layout_width="119dp"
+            android:layout_height="34dp"
             android:layout_marginStart="16dp"
-            android:layout_marginBottom="264dp"
             android:gravity="center"
             app:cardBackgroundColor="#070707"
             app:cardCornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.685"
             tools:ignore="MissingConstraints">
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:id="@+id/textViewproduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="โปรโมชั่นที่น่าสนใจ "
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:visibility="visible" />
         </androidx.cardview.widget.CardView>
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="119dp"
+            android:layout_height="90dp"
+            android:src="@drawable/pen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.433" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="119dp"
+            android:layout_height="90dp"
+            android:src="@drawable/pdfziz"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.833" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="119dp"
+            android:layout_height="90dp"
+            android:src="@drawable/oo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.833" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="119dp"
+            android:layout_height="90dp"
+            android:src="@drawable/mm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.962"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.828" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="119dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ll"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.438" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="119dp"
+            android:layout_height="90dp"
+            android:src="@drawable/kk"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.948"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.436" />
+
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView3"
-            android:layout_width="130dp"
-            android:layout_height="22dp"
+            android:id="@+id/CardView1"
+            android:layout_width="119dp"
+            android:layout_height="34dp"
             android:layout_marginStart="16dp"
             android:gravity="center"
             app:cardBackgroundColor="#070707"
             app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="178dp">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.322"
+            tools:ignore="MissingConstraints">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="รายการสินค้าแนะนำ"
+                android:layout_gravity="center_vertical"
+                android:text="สินค้าแนะนำ"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:visibility="visible" />
         </androidx.cardview.widget.CardView>
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="129dp"
-            android:layout_height="94dp"
-            android:src="@drawable/BLN105"
+        <Button
+            android:id="@+id/button"
+            android:layout_width="92dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="24dp"
+            android:text="สั่งซื้อ"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.055"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.333" />
+            app:layout_constraintVertical_bias="0.984" />
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="129dp"
-            android:layout_height="94dp"
-            android:src="@drawable/pdfziz"
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="92dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="24dp"
+            android:text="สั่งซื้อ"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.06"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.756" />
+            app:layout_constraintVertical_bias="0.623" />
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="129dp"
-            android:layout_height="94dp"
-            android:src="@drawable/pdfziz"
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="92dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="156dp"
+            android:text="สั่งซื้อ"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.79"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.756" />
+            app:layout_constraintVertical_bias="0.624" />
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="129dp"
-            android:layout_height="94dp"
-            android:src="@drawable/BLN105"
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="92dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="288dp"
+            android:text="สั่งซื้อ"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.797"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.332" />
+            app:layout_constraintVertical_bias="0.624" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="147dp"
-            android:layout_height="91dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.064"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="327dp">
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="112dp"
-                android:layout_height="38dp"
-                android:layout_marginStart="16dp"
-                android:text="สั่งสินค้า"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="52dp" />
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="133dp"
-                android:layout_height="41dp"
-                android:layout_marginStart="16dp"
-                android:text="ปากกาหมึกเจล฿31.00 /ด้าม"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.037" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="163dp"
-            android:layout_height="94dp"
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="92dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="160dp"
+            android:text="สั่งซื้อ"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.51"
-            tools:layout_editor_absoluteX="207dp">
+            app:layout_constraintVertical_bias="0.979" />
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="112dp"
-                android:layout_height="38dp"
-                android:layout_marginStart="16dp"
-                android:text="สั่งสินค้า"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="52dp" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="92dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="300dp"
+            android:text="สั่งซื้อ"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.979" />
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="133dp"
-                android:layout_height="41dp"
-                android:layout_marginStart="16dp"
-                android:text="ปากกาหมึกเจล฿31.00 /ด้าม"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.037" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="60dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="16dp"
+            android:text="ดินสอไม้"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.884" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="60dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="16dp"
+            android:text="ปากกา"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.535" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="147dp"
-            android:layout_height="91dp"
-            tools:layout_editor_absoluteX="17dp"
-            tools:layout_editor_absoluteY="584dp">
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="66dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="288dp"
+            android:text="ปากกาเคมี"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.541" />
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="112dp"
-                android:layout_height="38dp"
-                android:layout_marginStart="16dp"
-                android:text="สั่งสินค้า"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="52dp" />
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="66dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="156dp"
+            android:text="ยางลบ"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.537" />
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="120dp"
-                android:layout_height="19dp"
-                android:layout_marginStart="4dp"
-                android:text="ดินสอไม้ HB"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.069" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="60dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="148dp"
+            android:text="สีไม้"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.887" />
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="143dp"
-                android:layout_height="18dp"
-                android:layout_marginStart="4dp"
-                android:text="ราคาพิเศษ฿10.00 ด้าม"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="24dp" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="60dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="280dp"
+            android:text="ไม้บรรทัด"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.887" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="110dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="16dp"
+            android:text="ราคาพิเศษ ฿10.00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.915" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="147dp"
-            android:layout_height="91dp"
-            tools:layout_editor_absoluteX="218dp"
-            tools:layout_editor_absoluteY="585dp">
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="94dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="156dp"
+            android:text="ราคา ฿20.00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.571" />
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="112dp"
-                android:layout_height="38dp"
-                android:layout_marginStart="16dp"
-                android:text="สั่งสินค้า"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="52dp" />
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="94dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="288dp"
+            android:text="ราคา ฿30.00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.577" />
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="120dp"
-                android:layout_height="19dp"
-                android:layout_marginStart="4dp"
-                android:text="ดินสอไม้ HB"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.069" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="94dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="16dp"
+            android:text="ราคา ฿20.00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.571" />
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="143dp"
-                android:layout_height="18dp"
-                android:layout_marginStart="4dp"
-                android:text="ราคาพิเศษ฿10.00 ด้าม"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="24dp" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="126dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="148dp"
+            android:text="ราคาพิเศษ ฿250.00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.915" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="126dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="280dp"
+            android:text="ราคาพิเศษ ฿5.00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.918" />
 
         <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="413dp"
-            android:layout_height="137dp"
-            android:layout_marginTop="24dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
+            android:id="@+id/imageView4"
+            android:layout_width="310dp"
+            android:layout_height="173dp"
             android:src="@drawable/ww"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.064" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.motion.widget.MotionLayout>
 </FrameLayout>
